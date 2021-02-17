@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const users = {
-    list: () => {
+    all: () => {
         // RUTA DEL ARCHIVO JSON
         const file = path.resolve(__dirname,"../users.json")
         // LEEMOS EL ARCHIVO
