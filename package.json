@@ -1,0 +1,31 @@
+{
+  "name": "1120CDFSNCN26LAED-CRUD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "clear && nodemon src/index.js -e .mjs,.js,.json,.ejs,.css",
+    "start": "clear && node src/index.js",
+    "install": "npm i express ejs method-override && npm i nodemon -D",
+    "postinstall": "clear && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalhedu/1120CDFSNCN26LAED-CRUD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalhedu/1120CDFSNCN26LAED-CRUD/issues"
+  },
+  "homepage": "https://github.com/digitalhedu/1120CDFSNCN26LAED-CRUD#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
