@@ -1,3 +1,4 @@
+const products = require("../database/models/product.js");
 const dbProducts = require("../database/models/product.js");
 
 module.exports = {
@@ -52,6 +53,9 @@ module.exports = {
 
     },
     delete: (req,res) => {
-        
+        let allProducts = dbProducts.all();
+        let deletedProducts = allProducts.filter( product => product.id != req.body.id);
+        dbProducts.write(deletedProducts);
+        return res.redirect("/product")
     }
 }    
