@@ -17,7 +17,7 @@ const products = {
         // COVERTIMOS JSON a ARRAY
         const info = JSON.parse(data)
         // BUCAMOS POR EL PARAMETRO ID 
-        return info.find( x => x.id == id);
+        return info.find( product => product.id == id);
     },
     write: (data) =>{
         // RUTA DEL ARCHIVO JSON

@@ -18,4 +18,4 @@ ___
     + **D**elete
         > Borrar los datos de uno registros dentro de una colección
       + Metodos: *`distroy`* o *`disable`*
-      + Verbos HTTP: *`delete`*
+      + Verbos HTTP: *`DELETE`*
